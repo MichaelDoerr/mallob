@@ -1,13 +1,11 @@
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 
-set cm=python ../scripts/plot/plot_curves.py -linestyles="None,--,-" -markers="^,None,s" -xy -xlabel="worksize k*n*d" -ylabel="demand" -title="best demand compared to worksize adjusted"
+set cm=python ../scripts/plot/plot_curves.py -linestyles="None,--,-" -markers="^,None,s" -xy -xlabel="Jobgr\\\"o\ss{}e $k\cdot n\cdot d$" -ylabel="bester Demand" -title="Bester Demand f\\\"ur Jobgr\\\"o\ss{}e" -size="3.75"
 
-set cm=!cm! .\FinalSweetpointsTrimmedPlot.txt -l="adjusted points"
-set cm=!cm! .\regression.txt -l="power regression"
-set cm=!cm! .\stairs.txt -l="demand function"
+set cm=!cm! .\FinalSweetpointsPlot.txt -no-legend
 
-set cm=!cm!  -o=.\FinalSweetpointsTrimmedPlot.pdf
+set cm=!cm!  -o=.\FinalSweetpointsPlot.pdf
 call !cm!
 
 pause
