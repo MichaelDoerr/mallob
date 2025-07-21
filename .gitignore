@@ -1,6 +1,7 @@
 .*
 _*
 /*.cnf
+*.log
 *.srctrl*
 logs/*
 .vscode/
