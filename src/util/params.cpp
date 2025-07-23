@@ -80,7 +80,7 @@ void Parameters::init(int argc, char** argv) {
 void Parameters::expand() {
     if (monoFilename.isSet()) {
         // Single instance solving
-        hopsUntilCollectiveAssignment.set(-1); // no collective assignments
+        //hopsUntilCollectiveAssignment.set(-1); // no collective assignments
         numClients.set(1); // 1 client
         useFilesystemInterface.set(false); // no fs interface
         useIPCSocketInterface.set(false); // no socket interface
